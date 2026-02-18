@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundPro X</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/logo.png" alt="SoundPro Logo" decoding="async">
+            <span>SoundPro</span>
+        </div>
+        <div class="nav-container">
+            <nav class="menu" aria-label="Основная навигация">
+                <ul>
+                    <li><a href="__Main__.html">Home</a></li>
+                    <li><a href="product1.html">X Series</a></li>
+                    <li><a href="product2.html">Lite Series</a></li>
+                    <li><a href="product3.html">Max Series</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">SoundPro X</h1>
+
+        <h2 class="section-title">Описание товара</h2>
+        <img src="img/headphones.png" alt="SoundPro X" class="product-image" loading="lazy" decoding="async">
+        <p class="short-description">
+            Современные беспроводные наушники с чистым звуком и активным шумоподавлением.
+        </p>
+
+        <h2 class="section-title">Характеристики товара</h2>
+        <table class="tech-table">
+            <tr>
+                <th>Параметр</th>
+                <th>Значение</th>
+            </tr>
+            <tr>
+                <td>Тип</td>
+                <td>Беспроводные</td>
+            </tr>
+            <tr>
+                <td>Подключение</td>
+                <td>Bluetooth 5.2</td>
+            </tr>
+            <tr>
+                <td>Время работы</td>
+                <td>До 30 часов</td>
+            </tr>
+            <tr>
+                <td>Цвет</td>
+                <td>Чёрный</td>
+            </tr>
+        </table>
+
+        <h2 class="section-title">Расширенная таблица параметров</h2>
+        <table class="big-table">
+            <tr>
+                <th colspan="5">Технические данные SoundPro X</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Аудио</td>
+                <td>Диапазон</td>
+                <td>20-20000</td>
+                <td>Гц</td>
+                <td>Стандарт</td>
+            </tr>
+            <tr>
+                <td>Шумоподавление</td>
+                <td colspan="3">Активное</td>
+            </tr>
+            <tr>
+                <td>Питание</td>
+                <td>Батарея</td>
+                <td>500</td>
+                <td>мАч</td>
+                <td>Li-ion</td>
+            </tr>
+            <tr>
+                <td>Связь</td>
+                <td colspan="4">Bluetooth 5.2</td>
+            </tr>
+        </table>
+
+        <p>
+            Наушники SoundPro X созданы для комфортного прослушивания музыки в течение всего дня.
+            Они оснащены системой активного шумоподавления и поддерживают быструю зарядку.
+        </p>
+
+        <h3>Внешний вид</h3>
+        <p>
+            Минималистичный дизайн, матовое покрытие и мягкие амбушюры обеспечивают удобство и стиль.
+        </p>
+
+        <h3>Особенности</h3>
+        <div class="features">
+            <ul>
+                <li>Активное шумоподавление</li>
+                <li>Сенсорное управление</li>
+                <li>Быстрая зарядка</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">Подробное описание товара</h2>
+        <p>Text</p>
+
+        <a href="__Main__.html" class="back-home">← Вернуться на главную</a>
+    </main>
+
+    <footer class="footer">Все права защищены</footer>
+
+    <script>
+    document.addEventListener('input', function(e) {
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+            let words = e.target.value.split(' ');
+            for (let i = 0; i < words.length; i++) {
+                if (words[i].length > 0) {
+                    words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+                }
+            }
+            e.target.value = words.join(' ');
+        }
+    });
+    </script>
+</body>
+</html>

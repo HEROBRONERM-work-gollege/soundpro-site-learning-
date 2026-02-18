@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - SoundPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/logo.png" alt="SoundPro Logo" decoding="async">
+            <span>SoundPro</span>
+        </div>
+        <div class="nav-container">
+            <nav class="menu" aria-label="Основная навигация">
+                <ul>
+                    <li><a href="__Main__.html">Home</a></li>
+                    <li><a href="product1.html">X Series</a></li>
+                    <li><a href="product2.html">Lite Series</a></li>
+                    <li><a href="product3.html">Max Series</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Contacts</h1>
+
+        <nav class="menu" aria-label="Быстрые ссылки">
+            <ul>
+                <li><a href="__Main__.html">Главная</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <h1>Контакты</h1>
+
+        <section class="contacts-info">
+            <p><strong>Название магазина:</strong> SoundPro</p>
+            <p><strong>Телефон:</strong> +79859512006</p>
+            <p><strong>Email:</strong> info@soundpro.com</p>
+            <p><strong>Адрес:</strong> Германия, г. Берлин, ул. Примерная, 10</p>
+            <p><strong>Время работы:</strong> Пн-Пт с 9:00 до 18:00</p>
+        </section>
+
+        <section class="email-block">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Введите email" autocomplete="email">
+            <button type="button" class="send-btn">Отправить</button>
+        </section>
+    </main>
+
+    <footer class="footer">Все права защищены</footer>
+
+    <script>
+    document.addEventListener('input', function(e) {
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+            let words = e.target.value.split(' ');
+            for (let i = 0; i < words.length; i++) {
+                if (words[i].length > 0) {
+                    words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+                }
+            }
+            e.target.value = words.join(' ');
+        }
+    });
+    </script>
+</body>
+</html>
